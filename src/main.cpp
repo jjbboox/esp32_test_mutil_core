@@ -6,14 +6,14 @@
 
 void core_pro(void *pvParameters) {
     while(1) {
-        Serial.println("P.");
+        Serial.print("P.");
         vTaskDelay(CORE_PRO_DELAY);
     }
 }
 
 void core_app(void *pvParameters) {
     while(1) {
-        Serial.println("A.");
+        Serial.print("A.");
         vTaskDelay(CORE_APP_DELAY);
     }
 }
